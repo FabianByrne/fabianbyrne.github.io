@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="homejavascript.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="nav-item" onmouseover="lightup(this)" onmouseleave="lightout(this)"><a href="index.html">Home</a></li>
+                <li class="nav-item" onmouseover="lightup(this)" onmouseleave="lightout(this)"><a href="education.html">BIOS</a></li>
+                <li class="nav-item" onmouseover="lightup(this)" onmouseleave="lightout(this)"><a href="CV.html">CV</a></li>
+                <li class="nav-item" onmouseover="lightup(this)" onmouseleave="lightout(this)"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="pagecontainer">
+    <h1 class="contentheading"><u>BIOS</u></h1>
+    <br>
+    <div id="aboutme">
+        <h2><u>Personal Statement</u></h2>
+        <p>My name is Fabian Byrne. In early 2023, I made the decision to re-qualify as a software engineer. Since then, I
+            have completed a government backed Software Development bootcamp and continued to learn much more with online
+            training resources. In addition, I have worked on various practice projects such as games, web scrapers and
+            programs designed to automate time-consuming tasks which I experienced whilst working in the scientific field.
+            I aim to find a position where I can further develop these skills.</p>
+    </div>
+    <br>
+
+    <h1 class="contentheading"><u>Education</u></h1>
+    <br>
+    <table id="educationtable">
+        <thead>
+        <tr>
+            <th>Institution</th>
+            <th>Qualification</th>
+            <th>Grade</th>
+            <th>Year</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>QA</td>
+                <td>Digital Skills - Level 3 Software Development</td>
+                <td>Bootcamp completion certificate</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>University of the West of England</td>
+                <td>Bsc.(<em>Hons</em>) Biological Science</td>
+                <td>2:1</td>
+                <td>2013</td>
+            </tr>
+            <tr>
+                <td>Downend Sixth Form</td>
+                <td>A Levels: Product Design, Biology, Chemistry</td>
+                <td>A-C grades</td>
+                <td>2009</td>
+            </tr>
+            <tr>
+                <td>Downend School</td>
+                <td>GCSE's including Maths, English and Science</td>
+                <td>A-C grades</td>
+                <td>2007</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+
+    <h1 class="contentheading"><u>Employment History</u></h1>
+    <br>
+
+    <button class="accordion">ALS Food & Pharmaceutical (2018 - 2023)</button>
+    <div class="panel">
+        <h2><u>Microbiologist</u></h2>
+        <p>Primarily responsible for identification/ confirmation of dangerous pathogens, and the reporting of results. Duties included:</p>
+        <ul>
+            <li>Maintaining UKAS and RSA accreditation</li>
+            <li>Identification and quantification of pathogens such as <em>Salmonella</em> and <em>Listeria monocytogenes</em>.</li>
+            <li>Speciation using MALDITOF.</li>
+            <li>Data entry into LIMS, together with the paper record-keeping.</li>
+            <li>Writing daily reports for the Managers, Section Heads, and other Microbiologists.</li>
+            <li>Approval of lab results, OOS approval and phoning clients regarding results.</li>
+            <li>Investigating of anomalies/ failures and concluding corrective action when possible.</li>
+            <li>Training of new staff.</li>
+        </ul>
+    </div>
+    <button class="accordion">ALS Food & Pharmaceutical (2016 - 2018):</button>
+    <div class="panel">
+        <h2><u>Senior Laboratory Technician</u></h2>
+        <p>Responsible for aseptic preparation of samples and analysing samples for microbiological activity. Duties included:</p>
+        <ul>
+            <li>Training of staff.</li>
+            <li>Quality control.</li>
+            <li>Record-keeping.</li>
+            <li>Colony counting.</li>
+            <li>Screening of presumptive samples using ELISA.</li>
+            <li>Growth media preparation.</li>
+        </ul>
+    </div>
+
+    <button class="accordion">GlaxoSmithKline (2015 - 2016)</button>
+    <div class="panel">
+        <h2><u>Associate Scientist</u></h2>
+        <p>Part of a skeleton crew, responsible for running a large chemical compound library with a small team. Duties included:</p>
+        <ul>
+            <li>Weighing out chemical compounds and dispatching them to internal clients around the globe.</li>
+            <li>Communicating technical matters with engineers.</li>
+            <li>Performing minor repair work on the software/ hardware of the site's automated sample management systems.</li>
+        </ul>
+    </div>
+
+    <button class="accordion">ALS Food & Pharmaceutical (2014 - 2015)</button>
+    <div class="panel">
+        <h2><u>Laboratory Technician</u></h2>
+        <p>Responsible for the growth media preparation lab, wednesdays-sundays. Duties included:</p>
+        <ul>
+            <li>Aseptic preparation of growth media.</li>
+            <li>Record-keeping.</li>
+        </ul>
+    </div>
+
+    <!-- For some reason, this accordion only works when the javascript is embedded like this, rather than referenced in an external .js file... -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+          });
+        }
+    </script>
+</div>
+</body>
+</html>
