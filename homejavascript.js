@@ -30,4 +30,6 @@ function lightout(element) {
     element.style.borderColor = "black";
 }
 
-
+function lightoutCerts(element) {
+    element.style.borderColor = "red";
+}
