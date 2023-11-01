@@ -93,6 +93,8 @@ nav ul {
 
 
 .contentheading {
+    font-family:'Verdana';
+    font-size:22;
     text-align:center;
     padding:10px;
     width:62%;
@@ -169,6 +171,24 @@ td {
     font-family:'Verdana';
     font-size:19px;
 }
+
+.certButton {
+    font-family:'Verdana';
+    font-size:40px;
+    border-width:3px;
+    margin-bottom:10px;
+    border-color:red;
+    border-radius:10px;
+    outline-color:black;
+    transition: all 0.3s;
+    cursor:pointer;
+
+}
+
+.certButton:hover {
+    transform: scale(1.1); /* Scale the list item on hover */
+}
+
 
 #contactdetails {
     font-family:'Verdana';
