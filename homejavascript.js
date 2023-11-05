@@ -8,7 +8,7 @@ function myFunction() {
 function welcomelight() {
     var banner = document.getElementById("welcomebanner");
     banner.style.borderColor = "yellow";
-    banner.style.fontSize = "19px";
+    banner.style.fontSize = "18px";
 
 }
 
